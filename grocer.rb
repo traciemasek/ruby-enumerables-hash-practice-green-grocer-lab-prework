@@ -50,6 +50,6 @@ def checkout(cart, coupons)
   
   total = 0 
   consolidated_cart.each do |item, item_hash|
-    total += item_hash[:price] * item_hash[:count]
+    total += item[item_hash[:price]] * item[item_hash[:count]]
   end
 end
