@@ -1,3 +1,5 @@
+ #I definitely had to reference the solution to even get started on this, and only solved apply_clearance without referencing the solution several times
+ 
  def consolidate_cart(cart)
   consolidated_hash = {}
   cart.each do |item|
