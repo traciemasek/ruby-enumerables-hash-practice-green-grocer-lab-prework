@@ -52,4 +52,7 @@ def checkout(cart, coupons)
   consolidated_cart.each do |item, item_hash|
     total += item[item_hash[:price]] * item[item_hash[:count]]
   end
+  if total > 100
+  end
+  total
 end
