@@ -50,7 +50,7 @@ def checkout(cart, coupons)
   
   total = 0 
   cart_after_clearance.each do |item, item_hash|
-    total += item[item_hash][:price]] * item[item_hash][:count]]
+    total += item[item_hash[:price]] * item[item_hash[:count]]
   end
   if total > 100
     total = (total * 0.9).round(2)
